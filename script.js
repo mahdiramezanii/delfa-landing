@@ -164,7 +164,7 @@ const NOTIFY_ENDPOINT = "";
           if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
         });
       }, { threshold: 0.2 });
-      document.querySelectorAll(".divisions h2, .item").forEach((el, i) => {
+      document.querySelectorAll(".story-mark, .story-text, .divisions h2, .item").forEach((el, i) => {
         el.classList.add("pre");
         el.style.transitionDelay = el.classList.contains("item") ? (i % 3) * 120 + "ms" : "0ms";
         io.observe(el);
