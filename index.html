@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DelFa — A new chapter is loading</title>
+  <meta name="description" content="دلفا؛ تیمی در حوزهٔ مهندسی نرم‌افزار، هوش مصنوعی و بازاریابی دیجیتال. وب‌سایت رسمی به‌زودی رونمایی می‌شود. | DelFa is a technology team in software engineering, AI and digital marketing. Our new website is launching soon.">
+  <meta name="theme-color" content="#F7FBFC">
+
+  <!-- Link preview (Telegram, WhatsApp, X, LinkedIn…).
+       IMPORTANT: replace https://YOUR-DOMAIN.com with the real public address of the site
+       (keep the trailing paths). Crawlers need absolute public URLs; local paths will not work. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DelFa">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+  <meta property="og:title" content="DelFa | دلفا — ریشه در جنوب، مهندسی برای آینده">
+  <meta property="og:description" content="دلفا؛ مهندسی نرم‌افزار، هوش مصنوعی و بازاریابی دیجیتال. وب‌سایت رسمی به‌زودی رونمایی می‌شود. · Software, AI and digital marketing. Our new website is launching soon.">
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DelFa logo — Rooted in the South. Engineered for the Future.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DelFa | دلفا">
+  <meta name="twitter:description" content="Rooted in the South. Engineered for the Future. Our new website is launching soon.">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/og-image.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Outfit:wght@400;500;600&family=Vazirmatn:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-en="Skip to content" data-fa="رفتن به محتوا">Skip to content</a>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="DelFa">
+      <img src="assets/delfa-mark.png" alt="" width="40" height="35">
+      <span>DelFa</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#divisions" data-en="Discover DelFa" data-fa="دلفا را بشناسید">Discover DelFa</a>
+      <button class="lang" id="lang" type="button" aria-label="Switch language to Persian">فارسی</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+
+      <div class="hero-inner">
+        <p class="badge" data-en="A NEW CHAPTER IS LOADING" data-fa="یک فصل تازه در حال بارگذاری است">A NEW CHAPTER IS LOADING</p>
+        <h1 class="reveal">
+          <span data-en="Something New Is" data-fa="یک فصل تازه">Something New Is</span><br>
+          <span data-en="Taking Shape." data-fa="در راه است.">Taking Shape.</span>
+        </h1>
+        <p class="lede reveal" data-en="We’re building a new digital home for ideas, technology, and what comes next." data-fa="خانه دیجیتال جدید دلفا به‌زودی رونمایی می‌شود؛ جایی برای ایده‌ها، فناوری و آینده‌ای که می‌سازیم.">We’re building a new digital home for ideas, technology, and what comes next.</p>
+
+        <div class="countdown glass reveal" id="countdown" role="timer" aria-live="off">
+          <div class="unit"><span id="d">--</span><small data-en="Days" data-fa="روز">Days</small></div>
+          <div class="unit"><span id="h">--</span><small data-en="Hours" data-fa="ساعت">Hours</small></div>
+          <div class="unit"><span id="m">--</span><small data-en="Minutes" data-fa="دقیقه">Minutes</small></div>
+          <div class="unit"><span id="s">--</span><small data-en="Seconds" data-fa="ثانیه">Seconds</small></div>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+
+        <div class="actions reveal">
+          <button class="btn" id="notify-toggle" type="button" aria-expanded="false" aria-controls="notify" data-en="Stay in the Loop" data-fa="از رونمایی باخبر شو">Stay in the Loop</button>
+          <a class="link" href="#divisions" data-en="Discover DelFa" data-fa="دلفا را بشناسید">Discover DelFa</a>
+        </div>
+
+        <form class="notify glass" id="notify" hidden novalidate>
+          <label for="email" class="sr" data-en="Email address" data-fa="نشانی ایمیل">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          <button class="btn btn-solid" type="submit" data-en="Notify me" data-fa="خبرم کن">Notify me</button>
+          <p class="note" id="note" role="status"></p>
+        </form>
+
+        <p class="launch" data-en="OFFICIAL WEBSITE LAUNCHING SOON" data-fa="وب‌سایت رسمی به‌زودی رونمایی می‌شود">OFFICIAL WEBSITE LAUNCHING SOON</p>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg class="ribbons" viewBox="0 0 600 600" focusable="false">
+          <defs><linearGradient id="rb" x1="0" x2="1"><stop offset="0" stop-color="#19CD9F" stop-opacity="0"/><stop offset=".5" stop-color="#0AB8AA" stop-opacity=".7"/><stop offset="1" stop-color="#075985" stop-opacity="0"/></linearGradient></defs>
+          <g fill="none" stroke="url(#rb)" stroke-width="1.4">
+            <path d="M0 330C110 230 200 430 310 330S480 230 600 320"/>
+            <path d="M0 370C110 270 200 470 310 370S480 270 600 360"/>
+            <path d="M0 410C110 310 200 510 310 410S480 310 600 400" opacity=".7"/>
+            <path d="M0 290C110 190 200 390 310 290S480 190 600 280" opacity=".5"/>
+            <path d="M0 250C110 150 200 350 310 250S480 150 600 240" opacity=".3"/>
+          </g>
+        </svg>
+        <div class="glow"></div>
+        <img class="mark" src="assets/delfa-mark.png" alt="" width="537" height="469">
+      </div>
+    </section>
+
+    <section class="divisions" id="divisions" aria-labelledby="div-title">
+      <h2 id="div-title" data-en="Rooted in the South. Engineered for the Future." data-fa="ریشه در جنوب، مهندسی برای آینده">Rooted in the South. Engineered for the Future.</h2>
+      <ul class="grid">
+        <li class="glass item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></svg>
+          <h3>DelFa Dev</h3>
+          <p data-en="We engineer digital products." data-fa="محصولات دیجیتال را مهندسی می‌کنیم.">We engineer digital products.</p>
+        </li>
+        <li class="glass item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+          <h3>DelFa AI</h3>
+          <p data-en="We make intelligence practical." data-fa="هوش مصنوعی را کاربردی می‌کنیم.">We make intelligence practical.</p>
+        </li>
+        <li class="glass item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17c4 0 4-6 8-6s4 6 10 0M3 7h5M3 12h2"/><path d="M17 5l4 0 0 4"/></svg>
+          <h3>DelFa Market</h3>
+          <p data-en="We build brands that grow." data-fa="برندهایی می‌سازیم که رشد می‌کنند.">We build brands that grow.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <img src="assets/delfa-logo.png" alt="DelFa" width="88" height="90">
+    <small>© <span id="year"></span> DelFa</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
